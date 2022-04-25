@@ -21,6 +21,9 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
 		}
 	}
 }
-public class PlayerTank : MonoSingleton<PlayerTank> { }
+public class PlayerTank : MonoSingleton<PlayerTank> 
+{
+
+}
 public class EnemyTank : MonoSingleton<EnemyTank> { }
 
