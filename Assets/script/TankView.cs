@@ -15,7 +15,12 @@ public class TankView: MonoBehaviour
     private float MovementInputValue;
     private float TurnInputValue;
     // Start is called before the first frame update
-
+    private void Start()
+    {
+        GameObject camera = GameObject.Find("Camera");
+        camera.transform.SetParent(transform);
+        camera.transform.position = new Vector3(0f, 3f, -4f);
+    }
     // Update is called once per frame
     void Update()
     {
